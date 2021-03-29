@@ -4,8 +4,8 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'Leon Brown Portfolio',
-    description: 'A Junior Developer portfolio.',
+    title: 'Leon Brown',
+    description: 'My developer portfolio.',
     siteUrl: 'https://leonbrown.dev',
     author: 'Leon Brown',
   },
@@ -24,7 +24,17 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        icon: 'src/images/icon.png',
+        name: `Leon Brown`,
+        short_name: `Leon Brown`,
+        start_url: `/`,
+        background_color: `#f6f4f1`,
+        theme_color: `#1d1d1d`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+        icon_options: {
+          purpose: `any maskable`,
+        },
+        lang: 'en',
       },
     },
     'gatsby-plugin-sharp',
