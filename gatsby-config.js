@@ -4,7 +4,10 @@ require('dotenv').config({
 
 module.exports = {
   siteMetadata: {
-    title: 'portfolio',
+    title: 'Leon Brown Portfolio',
+    description: 'A Junior Developer portfolio.',
+    siteUrl: 'https://leonbrown.dev',
+    author: 'Leon Brown',
   },
   plugins: [
     {
