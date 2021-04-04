@@ -20,7 +20,7 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sitemap`,
+    // `gatsby-plugin-sitemap`, // Commented out for development
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
