@@ -2,10 +2,14 @@
 @import './normalize.scss';
 
 // Global style values
-@import './variables.scss';
 @import './typography.scss';
+@import './variables.scss';
 
 // Components
+@import './components/header.scss';
+
+// Pages
+@import './pages/index.scss';
 
 // General styles
 body,
@@ -20,6 +24,7 @@ html {
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  font-family: $textFont;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
