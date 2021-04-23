@@ -11,6 +11,13 @@ $textFont: 'Poppins', sans-serif;
 // Sizes
 // ======
 
+.text--lg {
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: 500;
+
+}
+
 .text--xl {
   font-size: 10rem;
   font-style: italic;
@@ -28,8 +35,8 @@ $textFont: 'Poppins', sans-serif;
     z-index: -1;
     content: '';
     height: 32%;
-    width: 108%;
-    transform: translateX(-4%);
+    width: 105%;
+    transform: translateX(-2.5%);
     top: 62%;
   }
 }

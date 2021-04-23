@@ -1,0 +1,17 @@
+.work {
+  display: flex;
+}
+
+.work__statement {
+  width: 40vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10vw;
+}
+
+.work__statement-line {
+  margin-bottom: 0.5rem;
+}
