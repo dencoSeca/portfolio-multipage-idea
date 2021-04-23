@@ -2,11 +2,12 @@
 @import './normalize.scss';
 
 // Global style values
-@import './typography.scss';
 @import './variables.scss';
+@import './typography.scss';
 
 // Components
 @import './components/header.scss';
+@import './components/menu.scss';
 
 // Pages
 @import './pages/index.scss';
@@ -33,4 +34,9 @@ html {
   /* Hide scrollbar for IE, Edge and Firefox */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
+}
+
+a {
+  text-decoration: none;
+  color: $black;
 }

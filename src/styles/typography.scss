@@ -1,10 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+// ======================
+// Font family variables
+// ======================
+
 $displayFont: 'Poppins', sans-serif;
 $textFont: 'Poppins', sans-serif;
+
+// ======
+// Sizes
+// ======
 
 .text--xl {
   font-size: 10rem;
   font-style: italic;
   font-weight: 500;
+}
+// =====================
+// Color blocks on text
+// =====================
+
+[class*='with-color-block'] {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    content: '';
+    height: 3.5rem;
+    width: 108%;
+    transform: translateX(-4%);
+    margin-top: 7.5rem;
+  }
+}
+
+[class*='--purple'] {
+  &::before {
+    background-color: $purple;
+  }
+}
+
+[class*='--orange'] {
+  &::before {
+    background-color: $orange;
+  }
+}
+
+[class*='--pink'] {
+  &::before {
+    background-color: $pink;
+  }
+}
+
+[class*='--grey'] {
+  &::before {
+    background-color: $grey;
+  }
+}
+
+[class*='--green'] {
+  &::before {
+    background-color: $green;
+  }
+}
+
+[class*='--cyan'] {
+  &::before {
+    background-color: $cyan;
+  }
+}
+
+[class*='--blue'] {
+  &::before {
+    background-color: $blue;
+  }
 }

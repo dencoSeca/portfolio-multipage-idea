@@ -11,16 +11,4 @@
 
 .home__statement {
   margin: 3rem;
-  position: relative;
-
-  &::before {
-    position: absolute;
-    z-index: -1;
-    content: '';
-    height: 3.5rem;
-    width: 105%;
-    transform: translateX(-2.5%);
-    margin-top: 7.5rem;
-    background-color: $purple;
-  }
 }
