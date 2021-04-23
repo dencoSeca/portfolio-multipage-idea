@@ -21,7 +21,9 @@ function Menu() {
           Blog
         </Link>
       </div>
-      <span className="menu__copyright">&copy; 2021</span>
+      <span className="menu__copyright">
+        &copy; 2021
+      </span>
     </div>
   )
 }
