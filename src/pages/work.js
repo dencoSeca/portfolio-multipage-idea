@@ -11,6 +11,7 @@ function Work({ data }) {
     <LocomotiveScrollProvider
       options={{
         smooth: true,
+        lerp: 0.1,
       }}
       containerRef={scrollContainerRef}
     >
@@ -23,14 +24,14 @@ function Work({ data }) {
           <div
             className="statement__line text--lg"
             data-scroll
-            data-scroll-speed="1.5"
+            data-scroll-speed="2"
           >
             I like to make beautiful,
           </div>
           <div
             className="statement__line text--lg"
             data-scroll
-            data-scroll-speed="1.2"
+            data-scroll-speed="1.5"
           >
             intuitive and responsive
           </div>
@@ -42,7 +43,7 @@ function Work({ data }) {
             stuffs on the web.
           </div>
         </div>
-        <div className="projects">
+        <div className="projects" data-scroll-section>
           {projects.map((project, i) => (
             <div className="project__wrapper" key={i}>
               <div className="project__text">
