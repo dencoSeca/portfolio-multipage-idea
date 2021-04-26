@@ -14,17 +14,20 @@
   }
 
   .project__wrapper {
-    display: flex;
     margin-bottom: 15rem;
-    justify-content: flex-start;
+    position: relative;
   }
 
   .project__text {
     width: 40vw;
     padding-left: 10vw;
+    display: inline-block;
+    position: relative;
+    top: 0;
   }
 
   .project__image {
     width: 40vw;
+    display: inline-block;
   }
 }
