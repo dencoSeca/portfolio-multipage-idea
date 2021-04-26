@@ -33,8 +33,10 @@ function Work({ data }) {
           {projects.map((project, i) => (
             <div className="project__wrapper" key={i}>
               <div className="project__text">
-                <h3 className="project__title text--md">{project.title}</h3>
-                <p className="project__tagline">Marketing website for Bragazzi's cafe and delicatessen.</p>
+                <h3 className="project__title text--md text--italic with-color-block--grey">
+                  {project.title}
+                </h3>
+                <p className="project__tagline">{project.shortDescription.shortDescription}</p>
               </div>
               <StaticImage
                 className="project__image"
@@ -55,13 +57,16 @@ export const query = graphql`
   query MyQuery {
     allContentfulProject {
       nodes {
-        description {
-          raw
-        }
         githubLink
         liveLink
         title
         technologies
+        longDescription {
+          longDescription
+        }
+        shortDescription {
+          shortDescription
+        }
       }
     }
   }

@@ -6,7 +6,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 4rem;
+    margin-left: 3rem;
   }
 
   .statement__line {
@@ -16,6 +16,7 @@
   .project__wrapper {
     display: flex;
     margin-bottom: 15rem;
+    justify-content: flex-start;
   }
 
   .project__text {
@@ -24,6 +25,6 @@
   }
 
   .project__image {
-    width: 60vw;
+    width: 40vw;
   }
 }
