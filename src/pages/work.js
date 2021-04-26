@@ -25,20 +25,20 @@ function Work({ data }) {
       containerRef={containerRef}
     >
       <div className="work">
-        <div className="work__inner">
-          <div className="work__statement">
-            <span className="work__statement-line text--lg with-color-block--grey">
+        <div className="inner">
+          <div className="statement">
+            <span className="statement-line text--lg with-color-block--grey">
               I Like to create beautiful,
             </span>
-            <span className="work__statement-line text--lg with-color-block--grey">
+            <span className="statement-line text--lg with-color-block--grey">
               intuitive and responsive
             </span>
-            <span className="work__statement-line text--lg with-color-block--grey">
+            <span className="statement-line text--lg with-color-block--grey">
               stuffs on the web
             </span>
           </div>
           <div
-            className="work__projects"
+            className="projects"
             data-scroll-container
             ref={containerRef}
           >

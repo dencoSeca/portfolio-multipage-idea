@@ -4,24 +4,24 @@ import { Link } from 'gatsby'
 function Menu() {
   return (
     <div className="menu">
-      <div className="menu__links-wrapper">
+      <div className="links-wrapper">
         <Link
-          className="menu__link text--xl with-color-block--pink"
+          className="link text--xl with-color-block--pink"
           to="/about"
         >
           About
         </Link>
-        <Link className="menu__link text--xl with-color-block--cyan" to="/work">
+        <Link className="link text--xl with-color-block--cyan" to="/work">
           Work
         </Link>
         <Link
-          className="menu__link text--xl with-color-block--green"
+          className="link text--xl with-color-block--green"
           to="/blog"
         >
           Blog
         </Link>
       </div>
-      <span className="menu__copyright">
+      <span className="copyright">
         &copy; 2021
       </span>
     </div>

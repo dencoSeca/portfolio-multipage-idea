@@ -4,13 +4,10 @@ import { Link } from 'gatsby'
 function Header({ menuIsOpen, setMenuIsOpen }) {
   return (
     <header className="header">
-      <Link className="header__brand" to="/">
+      <Link className="brand" to="/">
         leonbrown.dev
       </Link>
-      <div
-        className="header__menu-button"
-        onClick={() => setMenuIsOpen(!menuIsOpen)}
-      >
+      <div className="menu-button" onClick={() => setMenuIsOpen(!menuIsOpen)}>
         {menuIsOpen ? (
           <svg
             width="100%"

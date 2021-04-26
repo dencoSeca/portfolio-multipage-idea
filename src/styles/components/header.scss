@@ -8,17 +8,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.header__brand {
-  text-decoration: none;
-  color: $black;
-  font-weight: 600;
-  margin-left: 3rem;
-}
+  .brand {
+    text-decoration: none;
+    color: $black;
+    font-weight: 600;
+    margin-left: 3rem;
+  }
 
-.header__menu-button {
-  width: 2rem;
-  margin-right: 3rem;
-  cursor: pointer;
+  .menu-button {
+    width: 2rem;
+    margin-right: 3rem;
+    cursor: pointer;
+  }
 }
