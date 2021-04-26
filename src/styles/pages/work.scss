@@ -1,7 +1,6 @@
-.work {
+.work-screen {
   display: flex;
   height: 100vh;
-  margin-left: 10vw;
   align-items: center;
 
   .inner {
@@ -15,14 +14,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    margin-left: 10vw;
   }
 
-  .statement-line {
+  .statement__line {
     margin-bottom: 0.5rem;
   }
 
   .projects-wrapper {
-    width: 100%;
     overflow-x: scroll;
     overflow-y: hidden;
     white-space: nowrap;

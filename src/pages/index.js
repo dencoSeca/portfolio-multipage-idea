@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className="home">
+    <div className="home-screen">
       <div className="statement text--xl with-color-block--purple">
         Hello,
       </div>
