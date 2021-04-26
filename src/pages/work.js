@@ -1,9 +1,8 @@
 import React, { useRef } from 'react'
 import { graphql } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
-// Components
-import { StaticImage } from 'gatsby-plugin-image'
 
 function Work({ data }) {
   const projects = data.allContentfulProject.nodes
@@ -23,14 +22,14 @@ function Work({ data }) {
         ref={scrollContainerRef}
       >
         <div className="statement">
-          <div className="statement__line text--lg with-color-block--grey">
+          <div className="statement__line text--lg">
             I like to make beautiful,
           </div>
-          <div className="statement__line text--lg with-color-block--grey">
+          <div className="statement__line text--lg">
             intuitive and responsive
           </div>
-          <div className="statement__line text--lg with-color-block--grey">
-            stuffs on the web
+          <div className="statement__line text--lg">
+            stuffs on the web.
           </div>
         </div>
         <div className="projects">

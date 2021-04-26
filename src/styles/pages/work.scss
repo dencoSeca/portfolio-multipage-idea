@@ -2,14 +2,14 @@
   width: 100%;
 
   .statement {
-    height: 60rem;
+    height: 50rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    margin-left: 4rem;
   }
 
   .statement__line {
-    margin: 1rem 0;
+    margin: 0.3rem 0;
   }
 }
