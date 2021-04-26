@@ -11,7 +11,6 @@ function Work({ data }) {
     <LocomotiveScrollProvider
       options={{
         smooth: true,
-        scrollFromAnywhere: true,
       }}
       containerRef={scrollContainerRef}
     >
@@ -20,14 +19,28 @@ function Work({ data }) {
         data-scroll-container
         ref={scrollContainerRef}
       >
-        <div className="statement__wrapper">
-          <div className="statement__line text--lg">
+        <div className="statement__wrapper" data-scroll-section>
+          <div
+            className="statement__line text--lg"
+            data-scroll
+            data-scroll-speed="1.5"
+          >
             I like to make beautiful,
           </div>
-          <div className="statement__line text--lg">
+          <div
+            className="statement__line text--lg"
+            data-scroll
+            data-scroll-speed="1.2"
+          >
             intuitive and responsive
           </div>
-          <div className="statement__line text--lg">stuffs on the web.</div>
+          <div
+            className="statement__line text--lg"
+            data-scroll
+            data-scroll-speed="1"
+          >
+            stuffs on the web.
+          </div>
         </div>
         <div className="projects">
           {projects.map((project, i) => (
@@ -36,7 +49,9 @@ function Work({ data }) {
                 <h3 className="project__title text--md text--italic with-color-block--grey">
                   {project.title}
                 </h3>
-                <p className="project__tagline">{project.shortDescription.shortDescription}</p>
+                <p className="project__tagline">
+                  {project.shortDescription.shortDescription}
+                </p>
               </div>
               <StaticImage
                 className="project__image"
