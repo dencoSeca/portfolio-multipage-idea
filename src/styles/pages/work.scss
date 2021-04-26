@@ -1,7 +1,7 @@
 .work-screen {
   width: 100%;
 
-  .statement {
+  .statement__wrapper {
     height: 50rem;
     display: flex;
     flex-direction: column;
@@ -11,5 +11,19 @@
 
   .statement__line {
     margin: 0.3rem 0;
+  }
+
+  .project__wrapper {
+    display: flex;
+    margin-bottom: 15rem;
+  }
+
+  .project__text {
+    width: 40vw;
+    padding-left: 10vw;
+  }
+
+  .project__image {
+    width: 60vw;
   }
 }
