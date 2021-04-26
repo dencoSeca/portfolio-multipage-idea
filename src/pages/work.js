@@ -38,7 +38,7 @@ function Work({ data }) {
             </span>
           </div>
           <div
-            className="projects"
+            className="projects-wrapper"
             data-scroll-container
             ref={containerRef}
           >
