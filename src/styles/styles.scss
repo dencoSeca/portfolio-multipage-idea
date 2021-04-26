@@ -5,10 +5,12 @@
 @import './variables.scss';
 @import './typography.scss';
 
+// Utils
+@import './locomotive-scroll.scss';
+
 // Components
 @import './components/header.scss';
 @import './components/menu.scss';
-@import './components/project.scss';
 
 // Pages
 @import './pages/index.scss';

@@ -1,33 +1,77 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { graphql } from 'gatsby'
+import {
+  LocomotiveScrollProvider,
+  useLocomotiveScroll,
+} from 'react-locomotive-scroll'
 
 // Components
-import Project from '../components/Project'
+import { StaticImage } from 'gatsby-plugin-image'
 
 function Work({ data }) {
   const projects = data.allContentfulProject.nodes
+  const containerRef = useRef(null)
+
+  const { scroll } = useLocomotiveScroll()
 
   return (
-    <div className="work">
-      <div className="work__inner">
-        <div className="work__statement">
-          <span className="work__statement-line text--lg with-color-block--grey">
-            I Like to create beautiful,
-          </span>
-          <span className="work__statement-line text--lg with-color-block--grey">
-            intuitive and responsive
-          </span>
-          <span className="work__statement-line text--lg with-color-block--grey">
-            stuffs on the web
-          </span>
+    <LocomotiveScrollProvider
+      options={{
+        smooth: true,
+        direction: 'horizontal',
+        lerp: 0.1,
+        scrollFromAnywhere: true,
+      }}
+      containerRef={containerRef}
+    >
+      <div className="work">
+        <div className="work__inner">
+          <div className="work__statement">
+            <span className="work__statement-line text--lg with-color-block--grey">
+              I Like to create beautiful,
+            </span>
+            <span className="work__statement-line text--lg with-color-block--grey">
+              intuitive and responsive
+            </span>
+            <span className="work__statement-line text--lg with-color-block--grey">
+              stuffs on the web
+            </span>
+          </div>
+          <div
+            className="work__projects"
+            data-scroll-container
+            ref={containerRef}
+          >
+            {projects.map((project, i) => (
+              <div className="project">
+                <StaticImage
+                  className="project__image"
+                  src="../images/cherry-pie.jpg"
+                  alt="cherry pie"
+                  // data-scroll
+                  data-scroll-speed="1"
+                  data-scroll-delay="2"
+                />
+              </div>
+            ))}
+          </div>
         </div>
-        <div className="work__projects">
-          {projects.map((project, i) => (
-            <Project key={i} />
-          ))}
-        </div>
-      </div>{' '}
-    </div>
+        {/* <div data-scroll-container ref={containerRef}>
+          <div data-scroll-section>
+            <h1 data-scroll>Hey</h1>
+            <p data-scroll>👋</p>
+          </div>
+          <div data-scroll-section>
+            <h2 data-scroll data-scroll-speed="1">
+              What's up?
+            </h2>
+            <p data-scroll data-scroll-speed="2">
+              😬
+            </p>
+          </div>
+        </div> */}
+      </div>
+    </LocomotiveScrollProvider>
   )
 }
 
