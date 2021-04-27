@@ -7,7 +7,13 @@ function Header({ menuIsOpen, setMenuIsOpen }) {
       <Link className="brand" to="/">
         leonbrown.dev
       </Link>
-      <div className="menu-button" onClick={() => setMenuIsOpen(!menuIsOpen)}>
+      <div
+        className="menu-button"
+        onClick={() => setMenuIsOpen(!menuIsOpen)}
+        onKeyPress={() => setMenuIsOpen(!menuIsOpen)}
+        role="button"
+        tabIndex="0"
+      >
         {menuIsOpen ? (
           <svg
             width="100%"

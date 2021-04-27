@@ -35,18 +35,8 @@ function Work({ data }) {
       </div>
       <div className="projects">
         {projects.map((project, i) => (
-          <div
-            className="project__wrapper"
-            id={`sticky${i}`}
-            key={i}
-            data-scroll-section
-          >
-            <div
-              className="project__text"
-              data-scroll
-              data-scroll-sticky
-              data-scroll-target={`#sticky${i}`}
-            >
+          <div className="project__wrapper" key={i} data-scroll-section>
+            <div className="project__text">
               <h3 className="project__title text--md text--italic with-color-block--grey">
                 {project.title}
               </h3>
@@ -54,13 +44,14 @@ function Work({ data }) {
                 {project.shortDescription.shortDescription}
               </p>
             </div>
-            <StaticImage
-              className="project__image"
-              src="../images/cherry-pie.jpg"
-              alt="cherry pie"
-              data-scroll
-              data-scroll-speed="-3"
-            />
+            <div className="project__image-wrapper">
+              <div className="project__image-cover" data-scroll></div>
+              <StaticImage
+                className="project__image"
+                src="../images/cherry-pie.jpg"
+                alt="cherry pie"
+              />
+            </div>
           </div>
         ))}
       </div>
