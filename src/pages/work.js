@@ -46,7 +46,7 @@ function Work({ data }) {
       <div className="projects">
         {projects.map((project, i) => (
           <div className="project__wrapper" key={i} data-scroll-section>
-            <div className="project__text">
+            <div className="project__title-wrapper">
               <h3 className="project__title text--md text--italic with-color-block--grey">
                 {project.title}
               </h3>
