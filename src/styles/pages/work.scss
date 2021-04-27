@@ -1,12 +1,22 @@
 .work-screen {
   width: 100%;
 
+  .title__wrapper {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .title {
+    margin: 10rem 10vw 0;
+  }
+
   .statement__wrapper {
-    height: 50rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 3rem;
+    align-items: flex-end;
+    margin: 5rem 10vw 10rem;
   }
 
   .project__wrapper {
