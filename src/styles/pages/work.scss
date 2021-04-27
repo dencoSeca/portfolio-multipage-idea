@@ -18,15 +18,22 @@
         transition-delay: 1s;
       }
     }
+
+    &:nth-of-type(even) {
+      flex-direction: row-reverse;
+    }
   }
 
   .project__text {
     width: 40vw;
     padding-left: 10vw;
+    padding-top: 10vw;
   }
 
   .project__image-wrapper {
     position: relative;
+    width: 30vw;
+    margin: 0 5vw;
   }
 
   .project__image-cover {
@@ -45,7 +52,6 @@
   }
 
   .project__image {
-    width: 40vw;
     display: inline-block;
   }
 }
