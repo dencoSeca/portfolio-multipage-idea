@@ -45,7 +45,11 @@ function Work({ data }) {
               </p>
             </div>
             <div className="project__image-wrapper">
-              <div className="project__image-cover" data-scroll></div>
+              <div
+                className="project__image-cover"
+                data-scroll
+                data-scroll-offset="30%, 80%"
+              ></div>
               <StaticImage
                 className="project__image"
                 src="../images/cherry-pie.jpg"

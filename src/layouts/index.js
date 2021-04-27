@@ -17,7 +17,6 @@ function Layout({ children, location }) {
     <LocomotiveScrollProvider
       options={{
         smooth: true,
-        offset: ['30%', '80%'],
       }}
       containerRef={scrollContainerRef}
     >
