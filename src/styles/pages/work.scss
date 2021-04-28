@@ -1,6 +1,6 @@
 .work-screen {
   .scroll-section-wrapper {
-    margin-top: 10rem;
+    margin-top: 20vh;
   }
 
   .statement {
@@ -16,6 +16,11 @@
 
   .project {
     display: inline-block;
+    margin-right: 4.5vw;
+
+    &:last-of-type {
+      margin-right: 10vw;
+    }
 
     &:nth-of-type(1) {
       .project__image-cover {
@@ -47,8 +52,7 @@
   }
 
   .project__image {
-    width: 500px;
-    margin-right: 5rem;
+    width: 30vw;
     position: relative;
   }
 
@@ -59,22 +63,20 @@
     right: 0;
     width: 100%;
     background-color: $white;
-    transition: $dramatic;
+    transition: width 1s $dramatic;
 
     &.is-inview {
       width: 0;
     }
   }
 
-  .project__title {
-    margin-top: 2rem;
-  }
-
   .project__title,
   .project__short-description {
     opacity: 0;
     transform: translateY(2rem);
-    transition: $gentle;
+    transition-property: opacity, transform;
+    transition-duration: 1s;
+    transition-timing-function: $gentle;
     transition-delay: 0.5s;
 
     &.is-inview {
@@ -83,7 +85,12 @@
     }
   }
 
+  .project__title {
+    margin: 2rem 0 1rem;
+  }
+
   .project__short-description {
     transition-delay: 0.7s;
+    width: 50%;
   }
 }

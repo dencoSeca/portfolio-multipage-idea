@@ -10,5 +10,5 @@ $cyan: #afeafd;
 $blue: #8daaf2;
 
 // Transitions
-$dramatic: all 1s cubic-bezier(0.87, 0, 0.13, 1);
-$gentle: all 1s cubic-bezier(0.25, 1, 0.5, 1);
+$dramatic: cubic-bezier(0.87, 0, 0.13, 1);
+$gentle: cubic-bezier(0.25, 1, 0.5, 1);
