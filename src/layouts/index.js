@@ -1,5 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react'
-import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
+import React, { useState, useEffect } from 'react'
 
 // Components
 import Header from '../components/Header'
@@ -7,25 +6,17 @@ import Menu from '../components/Menu'
 
 function Layout({ children, location }) {
   const [menuIsOpen, setMenuIsOpen] = useState(false)
-  const scrollContainerRef = useRef(null)
 
   useEffect(() => {
     setMenuIsOpen(false)
   }, [location])
 
   return (
-    <LocomotiveScrollProvider
-      options={{
-        smooth: true,
-      }}
-      containerRef={scrollContainerRef}
-    >
+    <>
       {menuIsOpen && <Menu />}
       <Header menuIsOpen={menuIsOpen} setMenuIsOpen={setMenuIsOpen} />
-      <main data-scroll-container ref={scrollContainerRef}>
-        {children}
-      </main>
-    </LocomotiveScrollProvider>
+      {children}
+    </>
   )
 }
 
