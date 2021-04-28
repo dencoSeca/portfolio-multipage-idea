@@ -22,24 +22,42 @@ function Work({ data }) {
         ref={scrollContainerRef}
       >
         <div className="scroll-section-wrapper" data-scroll-section>
-          <h2 className="statement" data-scroll data-scroll-speed="1">
-            <span className="statement__line text--lg ">
+          <h2 className="statement">
+            <span
+              className="statement__line text--lg"
+              data-scroll
+              data-scroll-speed="4"
+              data-scroll-position="left"
+            >
               I like to create beautiful,
             </span>
-            <span className="statement__line text--lg ">
+            <span
+              className="statement__line text--lg"
+              data-scroll
+              data-scroll-speed="2.5"
+              data-scroll-position="left"
+            >
               intuitive and responsive
             </span>
-            <span className="statement__line text--lg ">
+            <span
+              className="statement__line text--lg"
+              data-scroll
+              data-scroll-speed="3"
+              data-scroll-position="left"
+            >
               stuffs on the web.
             </span>
           </h2>
           {projects.map((project, i) => (
             <div className="project" key={i} data-scroll data-scroll-speed="1">
-              <StaticImage
-                className="project__image"
-                src="../images/cherry-pie.jpg"
-                alt="cherry pie"
-              />
+              <div className="project__image">
+                <StaticImage src="../images/cherry-pie.jpg" alt="cherry pie" />
+                <div
+                  className="project__image-cover"
+                  data-scroll
+                  data-scroll-offset="10%"
+                ></div>
+              </div>
               <h3 className="project__title">{project.title}</h3>
               <p className="project__short-description">
                 {project.shortDescription.shortDescription}
