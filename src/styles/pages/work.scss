@@ -37,10 +37,31 @@
     right: 0;
     width: 100%;
     background-color: $white;
-    transition: all 0.7s $dropBlinds;
+    transition: $dramatic;
 
     &.is-inview {
       width: 0;
     }
+  }
+
+  .project__title {
+    margin-top: 2rem;
+  }
+
+  .project__title,
+  .project__short-description {
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: $gentle;
+    transition-delay: 0.5s;
+
+    &.is-inview {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .project__short-description {
+    transition-delay: 0.7s;
   }
 }

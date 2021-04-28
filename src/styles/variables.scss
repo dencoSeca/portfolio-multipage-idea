@@ -9,5 +9,6 @@ $green: #cdfdaf;
 $cyan: #afeafd;
 $blue: #8daaf2;
 
-// Custom eases
-$dropBlinds: cubic-bezier(0.6, 0.05, 0.14, 0.96);
+// Transitions
+$dramatic: all 1s cubic-bezier(0.87, 0, 0.13, 1);
+$gentle: all 1s cubic-bezier(0.25, 1, 0.5, 1);

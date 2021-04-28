@@ -58,8 +58,18 @@ function Work({ data }) {
                   data-scroll-offset="10%"
                 ></div>
               </div>
-              <h3 className="project__title">{project.title}</h3>
-              <p className="project__short-description">
+              <h3
+                className="project__title text--md"
+                data-scroll
+                data-scroll-offset="10%"
+              >
+                {project.title}
+              </h3>
+              <p
+                className="project__short-description text--sm"
+                data-scroll
+                data-scroll-offset="10%"
+              >
                 {project.shortDescription.shortDescription}
               </p>
             </div>

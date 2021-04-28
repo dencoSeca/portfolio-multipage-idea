@@ -11,9 +11,14 @@ $textFont: 'Poppins', sans-serif;
 // Sizes
 // ======
 
+.text--sm {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 .text--md {
-  font-size: 2.5rem;
-  font-weight: 500;
+  font-size: 1.75rem;
+  font-weight: 400;
 }
 
 .text--lg {
