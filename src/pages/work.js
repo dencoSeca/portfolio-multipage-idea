@@ -1,6 +1,6 @@
 import React, { useRef } from 'react'
 import { graphql } from 'gatsby'
-import { StaticImage } from 'gatsby-plugin-image'
+import { GatsbyImage } from 'gatsby-plugin-image'
 import { LocomotiveScrollProvider } from 'react-locomotive-scroll'
 
 function Work({ data }) {
@@ -13,6 +13,7 @@ function Work({ data }) {
         smooth: true,
         direction: 'horizontal',
         scrollFromAnywhere: true,
+        multipler: 0.75,
       }}
       containerRef={scrollContainerRef}
     >
@@ -51,7 +52,10 @@ function Work({ data }) {
           {projects.map((project, i) => (
             <div className="project" key={i} data-scroll data-scroll-speed="1">
               <div className="project__image">
-                <StaticImage src="../images/cherry-pie.jpg" alt="cherry pie" />
+                <GatsbyImage
+                  image={project.image.gatsbyImageData}
+                  alt={project.image.description}
+                />
                 <div
                   className="project__image-cover"
                   data-scroll
@@ -84,7 +88,7 @@ export default Work
 
 export const query = graphql`
   query MyQuery {
-    allContentfulProject {
+    allContentfulProject(sort: { fields: createdAt, order: DESC }) {
       nodes {
         githubLink
         liveLink
@@ -95,6 +99,10 @@ export const query = graphql`
         }
         shortDescription {
           shortDescription
+        }
+        image {
+          gatsbyImageData(layout: FULL_WIDTH)
+          description
         }
       }
     }

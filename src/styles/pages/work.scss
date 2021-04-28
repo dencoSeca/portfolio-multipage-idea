@@ -5,9 +5,8 @@
 
   .statement {
     display: inline-block;
-    height: 100%;
-    vertical-align: middle;
-    margin: 0 10rem 0 5rem;
+    margin: 15vw 10rem 0 5rem;
+    vertical-align: top;
   }
 
   .statement__line {
@@ -19,7 +18,7 @@
     margin-right: 4.5vw;
 
     &:last-of-type {
-      margin-right: 10vw;
+      margin-right: 12vw;
     }
 
     &:nth-of-type(1) {
