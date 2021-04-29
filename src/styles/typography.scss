@@ -23,7 +23,7 @@ $textFont: 'Poppins', sans-serif;
 
 .text--lg {
   font-size: 3.5vw;
-  font-weight: 200;
+  font-weight: 400;
 }
 
 .text--xl {
@@ -40,7 +40,7 @@ $textFont: 'Poppins', sans-serif;
 
 [class*='with-color-block'] {
   position: relative;
-  display: inline-block;
+  width: fit-content;
 
   &::before {
     position: absolute;

@@ -5,7 +5,7 @@
 
   .statement {
     display: inline-block;
-    margin: 15vw 10rem 0 5rem;
+    margin: 15vw 5vw;
     vertical-align: top;
   }
 
@@ -57,9 +57,9 @@
 
   .project__image-cover {
     position: absolute;
-    bottom: 0;
     top: 0;
     right: 0;
+    bottom: 0;
     width: 100%;
     background-color: $white;
     transition: width 1s $dramatic;

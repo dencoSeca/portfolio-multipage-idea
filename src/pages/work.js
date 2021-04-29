@@ -58,7 +58,7 @@ function Work({ data }) {
               variants={statementWrapperVariants}
             >
               <motion.span
-                className="statement__line text--lg"
+                className="statement__line text--lg text--italic with-color-block--grey"
                 variants={statementVariants}
                 data-scroll
                 data-scroll-speed="4"
@@ -67,7 +67,7 @@ function Work({ data }) {
                 I like to create beautiful,
               </motion.span>
               <motion.span
-                className="statement__line text--lg"
+                className="statement__line text--lg text--italic with-color-block--grey"
                 variants={statementVariants}
                 data-scroll
                 data-scroll-speed="2.5"
@@ -76,7 +76,7 @@ function Work({ data }) {
                 intuitive and responsive
               </motion.span>
               <motion.span
-                className="statement__line text--lg"
+                className="statement__line text--lg text--italic with-color-block--grey"
                 variants={statementVariants}
                 data-scroll
                 data-scroll-speed="3"
