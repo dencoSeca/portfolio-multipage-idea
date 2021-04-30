@@ -1,6 +1,8 @@
 .work-screen {
   .scroll-section-wrapper {
-    margin-top: 20vh;
+    height: 100vh;
+    display: flex;
+    align-items: center;
   }
 
   .statement {
