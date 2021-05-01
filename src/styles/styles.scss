@@ -1,21 +1,21 @@
 // Reset
-@import './normalize.scss';
+@import './normalize';
 
 // Global style values
-@import './variables.scss';
-@import './typography.scss';
+@import './variables';
+@import './typography';
 
 // Utils
-@import './locomotive-scroll.scss';
+@import './locomotive-scroll';
 @import 'include-media/dist/_include-media.scss';
 
 // Components
-@import './components/header.scss';
-@import './components/menu.scss';
+@import './components/header';
+@import './components/menu';
 
 // Pages
-@import './pages/index.scss';
-@import './pages/work.scss';
+@import './pages/index';
+@import './pages/work';
 
 // General styles
 body,
