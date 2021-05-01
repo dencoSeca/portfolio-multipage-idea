@@ -1,0 +1,38 @@
+// ==========
+// Variables
+// ==========
+
+// Colors
+$black: #1d1d1d;
+$white: #ffffff;
+$purple: #beaffd;
+$orange: #fdafaf;
+$pink: #fdafde;
+$grey: #e5e5e5;
+$green: #cdfdaf;
+$cyan: #afeafd;
+$blue: #8daaf2;
+
+// Transitions
+$dramatic: cubic-bezier(0.87, 0, 0.13, 1);
+$gentle: cubic-bezier(0.25, 1, 0.5, 1);
+
+// Breakpoints
+$tablet: 1024px;
+$mobile: 768px;
+
+// =============
+// Media Mixins
+// =============
+
+@mixin tablet {
+  @media (max-width: $tablet) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $mobile) {
+    @content;
+  }
+}

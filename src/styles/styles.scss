@@ -2,12 +2,13 @@
 @import './normalize';
 
 // Global style values
-@import './variables';
 @import './typography';
+
+// Config
+@import './conifg';
 
 // Utils
 @import './locomotive-scroll';
-@import 'include-media/dist/_include-media.scss';
 
 // Components
 @import './components/header';
